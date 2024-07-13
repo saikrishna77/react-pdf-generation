@@ -14,6 +14,7 @@ const App = () => {
   const handleInputChange = (e) => {
     setQuery(e.target.value);
   };
+  console.log(setDownload);
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);

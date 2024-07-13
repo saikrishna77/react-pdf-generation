@@ -1,5 +1,5 @@
 // src/components/MyDocument.js
-import React, { useEffect } from "react";
+import React from "react";
 import {
   Page,
   Text,
@@ -154,7 +154,7 @@ const styles = StyleSheet.create({
 // Create Document Component
 const MyDocument = ({ data, sno }) => {
   if (data === null || !data) return;
-  const dealer = data.customFields?.find((item) => item.label === "TYPE");
+  // const dealer = data.customFields?.find((item) => item.label === "TYPE");
   const aglNo = data?.customFields?.find((item) => item.label === "AGL NO");
   const dealerDOE = data?.customFields?.find(
     (item) => item.label === "Date of Expiry"
